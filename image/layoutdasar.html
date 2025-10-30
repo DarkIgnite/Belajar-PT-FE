@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Badge Absolute */
+        .parent-box {
+            position: relative;
+            width: 250px;
+            height: 150px;
+            background: lightblue;
+            margin: 20px;
+            padding: 10px;
+        }
+        .badge {
+            position: absolute;
+            top: 8x;
+            right: 8px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px; }
+
+        /* 2. Header Fixed */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgb(31, 131, 193);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+        }
+        /* 3. Footer Sticky */
+        .layout {
+            display: flex;
+            gap: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            height: 300px;
+            background: rgb(255, 243, 203);
+            padding: 15px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            border: 1px solid black;
+        }
+        .main-content {
+            flex: 3;
+            padding: 15px;
+            border: 1px solid black;
+        }
+        .long-text {
+            height: 1500px;
+            background: linear-gradient(rgb(244, 234, 182), lightgray);
+        }
+    </style>
+</head>
+<body>
+    <h2>1. Badge Absolute</h2>
+    <div class="parent-box">
+        <div class="badge">NEW</div>
+        <p>Ini adalah kotak dengan badge absolute di pokok kanan atas.</p>
+    </div>
+
+    <!-- 2. Header Fixed -->
+    <div class="fixed-header">Header Fixed</div>
+    <div class="content">
+        <h2>2. Header Fixed</h2>
+        <p>Scroll ke bawah untuk melihat efek header fixed.</p>
+        <p class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel ipsam id nemo, fugit iste incidunt quas rem pariatur fuga, dolor quidem. Ullam cupiditate nisi mollitia quaerat repellendus beatae at suscipit blanditiis, ratione asperiores, libero deserunt aspernatur saepe possimus sit sequi ea. A, dignissimos assumenda possimus omnis obcaecati repellat, modi nesciunt, numquam ea harum corporis maiores doloremque dolorem soluta alias unde reiciendis autem. Eum, cum obcaecati. Possimus soluta, ad dicta laudantium amet, modi repellat magnam debitis fuga tempora et recusandae nulla voluptas totam necessitatibus sequi, nemo tempore maxime quia ratione veritatis quis. Iusto id illum quis voluptatum accusamus amet totam!</p>
+    </div>
+
+    <!-- 3. Sidebar Sticky -->
+    <h2>3. Sidebar Sticky</h2>
+    <div class="layout">
+        <div class="sidebar">
+            <h3>Sidebar Sticky</h3>
+            <p>Sidebar ini akan tetap terlihat saat kamu scroll ke bawah.</p>
+        </div>
+        <div class="main-content">
+            <p>Ini area konten utama.</p>
+            <div class="long-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis quia nesciunt quidem qui fugit aliquid consequuntur eveniet perspiciatis, eum corporis harum delectus enim quasi. Adipisci laboriosam quidem porro sequi animi labore, unde accusamus sit error quae beatae excepturi aut molestias explicabo numquam optio, quis voluptatibus commodi ut inventore officiis veniam odio vitae. Quidem, velit fuga, officia vero aut deleniti fugit accusamus, accusantium quod recusandae cum? Facere reprehenderit libero soluta expedita esse voluptate, aliquam atque voluptatibus perspiciatis possimus, consequatur fuga quia. Enim exercitationem minus, similique harum nihil eaque impedit sapiente! Laborum quam numquam deserunt optio corrupti, consequatur possimus suscipit maxime!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

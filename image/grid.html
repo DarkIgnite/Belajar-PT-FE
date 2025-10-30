@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .header {
+            grid-column: span 2;
+            background: lightseagreen;
+        }
+
+        .footer {
+            grid-column: span 2;
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="box header">Header</div>
+        <div class="box">Sidebar</div>
+        <div class="box">Konten</div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+
+</html>

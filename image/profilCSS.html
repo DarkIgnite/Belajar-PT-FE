@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan CSS</title>
+    <style>
+        /* Kotak utama */
+        #container {
+            background-color: lightgrey;
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        /* Judul */
+        h1 {
+            color: cadetblue;
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Foto profil */
+        .foto {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+
+        /* Paragraf deskripsi */
+        .deskripsi {
+            color: rgb(18, 128, 159);
+            font-family: "Times New Roman", serif;
+            font-size: 16px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Daftar hobi */
+        .hobi {
+            font-family: Verdana, sans-serif;
+            font-size: 14px;
+            color: rgb(142, 24, 59);
+            list-style-type: square; /* bentuk bullet kotak */
+        }
+
+        .hobi li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Ryan Fadhila</h1>
+
+        <!-- Ganti link gambar dengan foto kalian -->
+        <img src="WhatsApp Image 2025-09-24 at 14.03.21_8a5fe5a7.jpg" alt="Foto Profil" class="foto">
+
+        <p class="deskripsi">
+            Halo, nama saya <b>Ryan</b>. Saya Murid di SMK Telkom Banjarbaru.
+        </p>
+
+        <h1>Hobi Saya:</h1>
+        <ul class="hobi">
+            <li>Main Catur</li>
+            <li>Bantai orang main catur</li>
+            <li>Tidur nyenyak</li>
+            <li>Olahraga kalo niat</li>
+        </ul>
+    </div>
+
+</body>
+</html>

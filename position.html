@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Position CSS</title>
+    <style>
+        .parent.box {
+            position: relative;
+            width: 250px;
+            height: 150px;
+            background-color: bisque;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: red;
+            color: bisque;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: steelblue;
+            color: rgb(18, 231, 231);
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            height: 300px;
+            background: rgba(5, 1, 250, 0.324);
+            padding: 15px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            border: 1px solid rgb(211, 5, 159);
+        }
+
+        .main-content {
+            flex: 3;
+            padding: 15px;
+            border: 1px solid rgb(240, 3, 3);
+        }
+
+        .long-text {
+            height: 1500px;
+            background: linear-gradient(rgb(96, 0, 249), rgb(255, 255, 255));
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1. badge absolute</h2>
+    <div class="parent box">
+        <div class="badge">NEW</div>
+        <p>Ini adalah kotak dengan badge absolute di pojok kanan atas</p>
+    </div>
+
+    <div class="fixed-header">Ini Header Fixed</div>
+    <div class="content">
+        <h2>2. Header Fixed</h2>
+        <p>Scroll halaman ini untuk melihat header tetap menempel di atas.</p>
+        <p class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur maiores natus.
+            Consequuntur porro perspiciatis unde maiores praesentium laudantium accusantium, distinctio vero atque
+            tempora at commodi facere aperiam vel labore vitae itaque. Quibusdam, placeat? Quas similique accusantium
+            eaque aspernatur natus. Reprehenderit eum ad quibusdam tempore asperiores necessitatibus voluptates! Alias,
+            sed!</p>
+    </div>
+
+    <h2>3. sidebar ini sticky</h2>
+    <div class="layout">
+        <div class="sidebar">
+            <h2>sidebar</h2>
+            <p>Sidebar ini sticky. Coba scroll halaman, sidebar tetap menempel</p>
+        </div>
+        <div class="main-content">
+            <p>ini area konten utama</p>
+            <div class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque dolorem at
+                modi voluptates ab, explicabo, consectetur impedit maxime porro qui dicta perferendis blanditiis eius
+                distinctio asperiores commodi nihil voluptate similique ex eveniet itaque tempora! Beatae, numquam sunt
+                eligendi architecto deserunt animi molestiae explicabo amet, nobis quisquam nulla iste fugit officiis,
+                accusantium obcaecati doloremque rem vitae? Amet accusamus eligendi nulla architecto quos quisquam unde
+                accusantium quidem? Laboriosam vitae beatae sed iusto quos. Aut ipsa enim doloribus labore omnis vel
+                esse eum magni nemo nesciunt consequatur tempora at laudantium fugiat quia eligendi praesentium quam
+                reprehenderit minima, placeat dicta! Id, corporis maxime!</div>
+        </div>
+</body>
+
+</html>
