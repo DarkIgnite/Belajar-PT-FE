@@ -1,0 +1,142 @@
+/* --- Reset Dasar --- */
+* {
+    margin: 0;
+    /* Menghilangkan jarak luar default */
+    padding: 0;
+    /* Menghilangkan jarak dalam default */
+    box-sizing: border-box;
+    /* Agar lebar & tinggi elemen mencakup padding dan border */
+    font-family: "Poppins", sans-serif;
+    /* Mengatur font global menjadi Poppins */
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    /* Teks di tengah */
+    background-color: #4F91C1;
+    /* Warna latar biru */
+    color: white;
+    /* Warna teks putih */
+    padding: 40px 10px;
+    /* Jarak dalam atas-bawah 40px, kiri-kanan 10px */
+}
+
+/* --- Container Grid --- */
+.container {
+    display: grid;
+    /* Mengaktifkan mode grid layout */
+    grid-template-columns: repeat(3, 1ft);
+    /* Membuat 3 kolom dengan lebar yang sama */
+    gap: 20px;
+    /* Jarak antar elemen grid */
+    padding: 30px;
+
+
+}
+
+/* --- Card --- */
+
+.card {
+    background-color: #f9f9f9;
+    /* Warna latar abu-abu muda */
+    border-radius: 12px;
+    /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Bayangan halus */
+    overflow: hidden;
+    /* Memotong konten yang melampaui batas */
+    transition: transform 0.3s;
+    text-align: center;
+    /* Animasi transisi */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Card naik sedikit saat di-hover Gambar di dalam Card */
+}
+
+.card img {
+    width: 100%;
+    /* Lebar gambar menyesuaikan card */
+    height: 180px;
+    /* Tinggi tetap */
+    object-fit: cover;
+    /* Gambar menyesuaikan kotak tanpa terdistorsi (crop otomatis) */
+}
+
+/*--- Teks dan Tombol -- */
+.card h3 {
+    margin: 10px 0;
+    /* Jarak atas-bawah 10px */
+    color: #333;
+    /* Warna teks abu tua */
+}
+
+.card p {
+    color: #666;
+    /* Warna teks abu muda */
+    padding: 0 15px;
+    /* Jarak dalam kiri-kanan 15px */
+    font-size: 14px;
+    /* Ukuran font 14px */
+}
+
+button {
+    background-color: #4F91C1;
+    /* Warna latar biru */
+    color: white;
+    /* Warna teks putih */
+    border: none;
+    /* Menghilangkan border default */
+    padding: 10px 20px;
+    /* Jarak dalam atas-bawah 10px, kiri-kanan 20px */
+    border-radius: 6px;
+    /* Sudut membulat */
+    margin: 15px 0;
+    /* Jarak luar atas-bawah 15px */
+    cursor: pointer;
+    /* Mengubah kursor saat hover */
+    transition: background-color 0.3s;
+    /* Animasi transisi */
+}
+
+button:hover {
+    background-color: #3A6F99;
+    /* Warna latar lebih gelap saat hover */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    /* Teks di tengah */
+    padding: 20px;
+    /* Jarak dalam 20px */
+    background: #f1f1f1;
+    /* Warna latar abu-abu terang */
+    color: #555;
+    /* Warna teks abu sedang */
+}
+
+
+/* --- Responsif untuk tablet dan hp --- */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1ft);
+        /* 2 kolom untuk layar lebih kecil */
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* jika layar lebih 600px (hp) */
+    .container {
+        grid-template-columns: 1ft;
+        /* 1 kolom untuk layar sangat kecil */
+    }
+
+    header h1 {
+        font-size: 20px;
+        /* Ukuran font lebih kecil di header */
+    }
+}

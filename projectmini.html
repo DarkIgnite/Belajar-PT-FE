@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkIgnite Host</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-rows: 100px 50px 1fr 70px;
+        height: 100vh;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #6b34d3 0%, #8b5cf6 100%);
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 0 20px;
+        box-shadow: 0 4px 15px rgba(107, 52, 211, 0.2);
+
+        position: relative;
+    }
+
+    .navbar {
+        background-color: #F3F4F6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #111827;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+        background-color: #6b34d3;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .sidebar {
+        background-color: #ffffff;
+        color: #111827;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+    }
+
+    .content {
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+
+
+    .footer {
+        background: #F9FAFB;
+        color: #6B7280;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        padding: 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .features {
+        padding: 0;
+        margin: 0 0 15px 0;
+        justify-content: center;
+        font-size: 14px;
+        color: #444;
+
+    }
+
+    .features li {
+        margin-bottom: 6px;
+    }
+
+    .price {
+        font-size: 22px;
+        font-weight: bold;
+        color: #6b34d3;
+        margin: 5px 0 15px;
+    }
+
+    .button {
+        background-color: #6b34d3;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 18px;
+        font-size: 14px;
+        transition: background 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #5a2bbb;
+    }
+
+    .content img {
+        width: 150px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        bottom: 10px;
+    }
+
+    .layananprivat {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">DarkIgnite Host</div>
+
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="main">
+            <div class="sidebar">
+                <h1 class="layananprivat">Apa yang Membuat Kami Terbaik?</h1>
+                <div class="card">
+                    <h2>Latensi Rendah</h2>
+                    <p>Server kami terhubung ke internet melalui jaringan premium dengan kecepatan 1 Gbps hingga 10 Gbps
+                        - menjaga ping server game Anda tetap rendah.</p>
+                </div>
+                <br>
+                <div class="card">
+                    <h2>Perlindungan DDoS</h2>
+                    <p>Kami menggunakan perlindungan DDoS dari Path.net untuk layanan kami dengan kapasitas hingga 1.6
+                        Tbit/s serangan DDoS, menjaga server Anda aman dari serangan siber!</p>
+                </div>
+                <br>
+                <div class="card">
+                    <h2>Layanan Pelanggan</h2>
+                    <p>Kami tidak hanya menjual; kami memahami kebutuhan Anda. Dengan pengalaman ahli kami, kami siap
+                        memberikan solusi dan dukungan yang disesuaikan untuk segala yang Anda butuhkan.</p>
+                </div>
+            </div>
+            <div class="content">
+                <h2 class="layananprivat">LAYANAN VIRTUAL PRIVATE SERVER</h2>
+                <br>
+                <div class="card">
+                    <img src="image/mc-grass.webp" alt="">
+                    <h2>GENERAL</h2>
+                    <p>Paket hemat ideal untuk komunitas kecil hingga menengah—cocok untuk server publik atau private.
+                    </p>
+                    <ul class="features">
+                        <br>
+                        <hr>
+                        <br>
+                        <li>🛡️ DDoS Protection Tingkat Lanjut</li>
+                        <li>⚙️ Intel® Core™ i7-6700K @ 4.2 GHz</li>
+                        <li>💾 DDR4 RAM</li>
+                        <li>🔒 Penyimpanan SSD NVMe</li>
+                        <li>🌐 Uplink hingga 1 Gbps</li>
+                        <br>
+                        <hr>
+                    </ul>
+                    <div class="price">Rp 28.800 / Bln</div>
+                    <button class="button">Beli Sekarang</button>
+                </div>
+                <br>
+                <!-- NUSANTARA -->
+                <div class="card">
+                    <img src="image/nether_star.webp" alt="">
+                    <h2>NUSANTARA</h2>
+                    <p>Ideal untuk Minecraft modded dan server ramai — performa dan fleksibilitas tinggi untuk komunitas
+                        berkembang.</p>
+                    <ul class="features">
+                        <br>
+                        <hr>
+                        <br>
+                        <li>🛡️ DDoS Protection Tingkat Lanjut</li>
+                        <li>⚙️ AMD Ryzen™ 9 9900X @ 5.6 GHz</li>
+                        <li>💾 DDR5 RAM</li>
+                        <li>🔒 Penyimpanan SSD NVMe</li>
+                        <li>🌐 Uplink hingga 1 Gbps</li>
+                        <li>🔗 Dedicated IP</li>
+                        <br>
+                        <hr>
+                    </ul>
+                    <div class="price">Rp 498.750 / Bln</div>
+                    <button class="button">Beli Sekarang</button>
+                </div>
+                <br>
+                <!-- NUSANTARA PLUS -->
+                <div class="card">
+                    <img src="image/block_of_netherite.webp" alt="">
+                    <h2>NUSANTARA PLUS</h2>
+                    <p>Cocok untuk server Minecraft publik skala besar dengan performa tinggi dan gameplay stabil.</p>
+                    <ul class="features">
+                        <br>
+                        <hr>
+                        <br>
+                        <li>🛡️ DDoS Protection Tingkat Lanjut</li>
+                        <li>⚙️ AMD Ryzen™ 9 9900X @ 5.6 GHz</li>
+                        <li>💾 DDR5 RAM</li>
+                        <li>🔒 Penyimpanan SSD NVMe</li>
+                        <li>🌐 Uplink 2.5 Gbps</li>
+                        <li>🔗 Dedicated IP</li>
+                        <br>
+                        <hr>
+                    </ul>
+                    <div class="price">Rp 750.000 / Bln</div>
+                    <button class="button">Beli Sekarang</button>
+                </div>
+                <br>
+                <!-- TURBO PROXY -->
+                <div class="card">
+                    <img src="image/trident.webp" alt="">
+                    <h2>TURBO PROXY</h2>
+                    <p>Optimalkan Bungee/Velocity untuk komunitas menengah hingga besar dengan gameplay mulus.</p>
+                    <ul class="features">
+                        <br>
+                        <hr>
+                        <br>
+                        <li>🛡️ DDoS Protection Tingkat Lanjut</li>
+                        <li>⚙️ Intel® Core™ Series</li>
+                        <li>💾 DDR5 RAM</li>
+                        <li>🔒 Penyimpanan SSD NVMe</li>
+                        <li>🌐 Uplink hingga 1 Gbps</li>
+                        <br>
+                        <hr>
+                    </ul>
+                    <div class="price">Rp 30.000 / Bln</div>
+                    <button class="button">Beli Sekarang</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
